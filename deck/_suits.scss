@@ -1,0 +1,262 @@
+.card__suit {
+  height: 30px;
+
+  &_heart {
+    position: relative;
+    width: 35px;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: "";
+      left: 17px;
+      top: 0;
+      width: 17px;
+      height: 29px;
+      background: red;
+      border-radius: 17px 17px 0 0;
+      transform: rotate(-45deg);
+      transform-origin: 0 100%;
+    }
+
+    &:after {
+      left: 0;
+      transform: rotate(45deg);
+      transform-origin: 100% 100%;
+    }
+
+    &:nth-child(4) {
+      transform: rotate(180deg);
+    }
+  }
+
+  &_diamond {
+    width: 0;
+    height: 0;
+    border: 11px solid transparent;
+    border-bottom: 15px solid red;
+    position: relative;
+    top: -11px;
+
+    &:nth-child(2) {
+      justify-self: end;
+    }
+
+    &:after {
+      content: "";
+      position: absolute;
+      left: -11px;
+      top: 15px;
+      width: 0;
+      height: 0;
+      border: 11px solid transparent;
+      border-top: 15px solid red;
+    }
+  }
+
+  &_clubs {
+    width: 35px;
+    height: 30px;
+    position: relative;
+
+    &:nth-child(4) {
+      transform: rotate(180deg);
+    }
+
+    div {
+      position: absolute;
+      background-color: black;
+    }
+
+    &_circles {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+
+      &:nth-child(1),
+      &:nth-child(3) {
+        top: 10px;
+      }
+
+      &:nth-child(2) {
+        left: 10px;
+      }
+
+      &:nth-child(3) {
+        right: 0;
+      }
+    }
+
+    &_leg {
+      width: 5px;
+      height: 15px;
+
+      bottom: 0;
+      left: 15px;
+      position: relative;
+      background-color: black;
+
+      &::before,
+      &::after {
+        content: "";
+        display: block;
+        width: 0;
+        height: 0;
+        border-bottom: 5px solid black;
+
+        position: absolute;
+        bottom: 0;
+      }
+
+      &::before {
+        left: -80%;
+        border-left: 4px solid transparent;
+      }
+
+      &::after {
+        border-right: 4px solid transparent;
+        right: -80%;
+      }
+    }
+  }
+
+  &_spades {
+    .card__suit_clubs_leg {
+      left: 15.7px;
+      bottom: 10px;
+    }
+    &_h {
+      position: relative;
+      width: 35px;
+      transform: rotate(180deg);
+
+      &:before,
+      &:after {
+        position: absolute;
+        content: "";
+        left: 17px;
+        top: 0;
+        width: 17px;
+        height: 29px;
+        background: black;
+        border-radius: 17px 17px 0 0;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+      }
+
+      &:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+    }
+
+    &:nth-child(4) {
+      transform: rotate(180deg);
+    }
+  }
+
+  &_big {
+    grid-column: 1 / 4;
+    align-self: center;
+    justify-self: center;
+
+    &_h {
+      width: 70px;
+      height: 60px;
+
+      &:before,
+      &:after {
+        left: 35px;
+        width: 35px;
+        height: 60px;
+        border-radius: 35px 35px 0 0;
+      }
+
+      &:after {
+        left: 0;
+      }
+    }
+
+    &_d {
+      border: 21px solid transparent;
+      border-bottom: 30px solid red;
+      top: -21px;
+      width: 0;
+      height: 0;
+
+      &:after {
+        left: -21px;
+        top: 30px;
+        border: 21px solid transparent;
+        border-top: 30px solid red;
+      }
+    }
+
+    &_c {
+      width: 70px;
+      height: 60px;
+
+      .card__suit_clubs {
+        &_circles {
+          width: 32px;
+          height: 32px;
+
+          &:nth-child(1),
+          &:nth-child(3) {
+            top: 20px;
+          }
+
+          &:nth-child(2) {
+            left: 19px;
+          }
+        }
+      }
+    }
+
+    .card__suit_clubs_leg {
+      width: 10px;
+      height: 30px;
+      left: 30px;
+
+      &::before,
+      &::after {
+        border-bottom: 10px solid black;
+        bottom: 0;
+      }
+
+      &::before {
+        border-left: 8px solid transparent;
+      }
+
+      &::after {
+        border-right: 8px solid transparent;
+      }
+    }
+
+    &_s {
+      .card__suit_spades_h {
+        width: 70px;
+        height: 60px;
+        top: -20px;
+
+        &:before,
+        &:after {
+          left: 35px;
+          width: 35px;
+          height: 60px;
+          border-radius: 35px 35px 0 0;
+        }
+
+        &:after {
+          left: 0;
+        }
+      }
+
+      .card__suit_clubs_leg {
+        bottom: 40px;
+        left: 29.7px;
+      }
+    }
+  }
+}

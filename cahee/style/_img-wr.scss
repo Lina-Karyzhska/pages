@@ -1,0 +1,22 @@
+.image-wr {
+  position: relative;
+
+  width: 45%;
+  height: 100%;
+
+  &__item {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  &__title {
+    font-size: 1em;
+    color: #fff;
+  }
+
+  img {
+    width: 100%;
+  }
+}

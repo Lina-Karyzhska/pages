@@ -1,0 +1,263 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: linear 0.2s;
+  font-family: "Lato", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+.sect {
+  width: 100%;
+  height: 100%;
+
+  background-color: #292d3e;
+
+  position: relative;
+
+  &__mask {
+    background-image: url("../../img/bg.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    width: 100%;
+    height: 100%;
+  }
+
+  &__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 55%;
+  }
+
+  &__btns {
+    width: 100%;
+    padding: 0 50px;
+
+    display: flex;
+    justify-content: space-between;
+
+    background-color: #2b3040;
+  }
+
+  &__btn {
+    display: block;
+    padding-top: 35px;
+    margin: auto;
+
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    position: relative;
+
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #b7bacd;
+
+    &::before {
+      position: absolute;
+      left: 50%;
+      top: 0;
+      transform: translateX(-50%);
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    &_wrapper {
+      padding: 30px 0;
+
+      width: 30%;
+
+      &:first-child button::before {
+        content: url("../../svg/tooltip.svg");
+      }
+
+      &:nth-child(2) button::before {
+        content: url("../../svg/card.svg");
+      }
+
+      &:last-child button::before {
+        content: url("../../svg/basket.svg");
+      }
+    }
+  }
+
+  &__tabs {
+    background-color: #212534;
+    padding: 60px 50px;
+    width: 100%;
+  }
+}
+
+.tab {
+  display: none;
+}
+
+.game {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+
+  &__view {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    img:last-child {
+      position: relative;
+      left: -0.35rem;
+    }
+  }
+
+  &__info {
+    width: 62%;
+  }
+
+  &__main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    color: #fff;
+  }
+
+  &__name {
+    font-size: 2rem;
+    padding-bottom: 0.625rem;
+  }
+
+  &__date {
+    font-size: 0.875rem;
+  }
+
+  &__description {
+    color: #b7bacd;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+
+    padding: 30px 0 55px 0;
+  }
+
+  &__buy {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__discount {
+    font-size: 0.75rem;
+    color: #fedc3f;
+  }
+
+  &__price {
+    font-size: 2rem;
+    color: #fff;
+  }
+
+  &__btn {
+    width: 53%;
+    background-color: #13e28d;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    padding: 1.25rem 0;
+
+    font-size: 1rem;
+    color: #fff;
+
+    &:hover,
+    &:focus {
+      outline: none;
+      background-color: #00995a;
+    }
+  }
+}
+
+.active-tab {
+  border-bottom: 2px solid #fff;
+  padding-bottom: 28px;
+  transition: none;
+
+  &:first-child button::before {
+    content: url("../../svg/tooltip-active.svg");
+  }
+
+  &:nth-child(2) button::before {
+    content: url("../../svg/card-active.svg");
+  }
+
+  &:last-child button::before {
+    content: url("../../svg/basket-active.svg");
+  }
+
+  button.sect__btn {
+    color: #fff;
+  }
+}
+
+.calc {
+  width: 200px;
+  height: 250px;
+  margin: auto;
+  border: 1px solid #fff;
+  flex-direction: column;
+  // display: flex;
+
+  &__disp {
+    height: 5rem;
+    padding: 0.1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    .prev {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      font-size: 0.75rem;
+      line-height: 0.75rem;
+      color: gray;
+    }
+
+    .res,
+    .inputField {
+      font-size: 0.875rem;
+      line-height: 0.875rem;
+      color: lightgray;
+
+      &.target {
+        font-size: 1rem;
+        line-height: 1rem;
+        color: #fff;
+      }
+    }
+  }
+
+  &__btns {
+    display: grid;
+    height: 100%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  }
+}

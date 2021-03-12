@@ -1,0 +1,19 @@
+@mixin bg-img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@import "general";
+@import "header";
+@import "nav";
+@import "about";
+@import "img-wr";
+@import "services";
+@import "gallery";
+@import "subscribe";
+@import "blog";
+@import "contact";
+@import "form";
+@import "footer";
+@import "media";

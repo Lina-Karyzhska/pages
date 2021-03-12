@@ -1,0 +1,28 @@
+.about {
+  height: 100vh;
+
+  background-image: url("img/bg-about.jpg");
+  color: #fff;
+
+  &__wrapper {
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__img {
+    position: relative;
+    left: -5%;
+
+    img {
+      width: 95%;
+    }
+  }
+
+  &__content {
+    width: 55%;
+  }
+
+  &__title {
+    font-size: 1em;
+  }
+}

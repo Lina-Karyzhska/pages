@@ -1,0 +1,143 @@
+.blog {
+  height: 100vh;
+  background-color: #b07cf7;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    height: 85%;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__content {
+    width: 50%;
+    text-align: center;
+    margin-bottom: 2%;
+  }
+
+  &__title {
+    font-size: 1em;
+  }
+
+  &__articles {
+    width: 100%;
+    height: 50%;
+
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__btn {
+    margin-top: 2%;
+
+    background-color: rgba(247, 43, 59, 0.7);
+
+    &:hover {
+      background-color: rgba(247, 43, 59, 1);
+    }
+  }
+}
+
+.articles {
+  margin: 0 -12px;
+
+  &__item {
+    overflow: hidden;
+    height: 100%;
+    width: 33.33%;
+    position: relative;
+    margin: 0 12px;
+
+    @include bg-img;
+    // height: 97%;
+
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+
+    a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      color: #fff;
+    }
+
+    &:hover {
+      .articles__time {
+        top: 30px;
+        left: 30px;
+      }
+
+      .articles__header {
+        left: 20px;
+        bottom: 15px;
+      }
+
+      a {
+        height: 100%;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 1),
+          rgba(0, 0, 0, 0) 60%
+        );
+      }
+    }
+
+    &:first-child {
+      background-image: url("img/twenty.png");
+    }
+
+    &:nth-child(2) {
+      background-image: url("img/fourteen.png");
+    }
+
+    &:last-child {
+      background-image: url("img/ten.png");
+    }
+  }
+
+  &__time,
+  &__header {
+    position: absolute;
+  }
+
+  &__time {
+    text-align: center;
+    top: -60px;
+    left: -60px;
+    width: 60px;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 7px;
+    border-radius: 4px;
+    font-weight: 700;
+
+    time {
+      font-size: 1.2rem;
+      line-height: 1.2;
+
+      span {
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  &__header {
+    width: 85%;
+    bottom: -100px;
+    left: -40px;
+
+    h3 {
+      font-size: 1.2rem;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 0.8rem;
+      line-height: 1.8;
+    }
+  }
+}

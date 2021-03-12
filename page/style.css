@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.sect {
+    height: 100vh;
+
+    text-align: center;
+}
+
+.sect:nth-child(2n) {
+    color: #3c3c3c;
+    border: #3c3c3c;
+}
+
+.sect:nth-child(2n+1) {
+    color: #fff;
+    border: #3c3c3c;
+}
+
+.sect__overflow {
+    height: 100%;
+    width: 50%;
+
+    overflow: hidden;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+.sect__wrapper {
+    width: 100%;
+
+    border: 2px solid;
+    border-top: none;
+
+    position: relative;
+}
+
+.sect__content {
+    width: 60%;
+    margin: auto;
+}
+
+.sect__title {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    text-transform: uppercase;
+    font-size: 34px;
+    letter-spacing: 10px;
+}
+
+.sect__title::before {
+    content: "";
+    display: block;
+
+    position: relative;
+    top: 20px;
+    left: -230%;
+
+    width: 200%;
+    border-top: 2px solid #3c3c3c;
+}
+
+.sect:nth-child(2n+1) .sect__title::before {
+    border-top: 2px solid #fff;
+}
+
+.sect__title::after {
+    content: "";
+    display: block;
+    position: relative;
+    top: -23px;
+    right: -130%;
+
+    width: 200%;
+    border-top: 2px solid #3c3c3c;
+}
+
+.sect:nth-child(2n+1) .sect__title::after {
+    border-top: 2px solid #fff;
+}
+
+.sect__first-p {
+    padding-top: 60px;
+}
+
+.sect__text {
+    margin-bottom: 20px;
+
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.sect__icon {
+    width: 13%;
+}
+
+.sect__part-title {
+    padding-bottom: 40px;
+
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.sect__part-text_pad-btm {
+    padding-bottom: 50px;
+}
+
+.sect__btn {
+    display: block;
+    width: 80%;
+
+    padding: 20px 0;
+    margin: 40px auto;
+
+    background-color: #3c3c3c;
+    border: none;
+
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 5px;
+    color: #fff;
+
+    cursor: pointer;
+}
+
+.sect__btn:focus{
+    outline: none;
+}
+
+.sect__btn:active {
+    opacity: 0.7;
+}
+
+.sect-bg {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header {
+    background-image: url("img/header.jpg");
+    height: 120vh;
+}
+
+.header__wrapper {
+    width: 36%;
+    height: 100%;
+
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header__logo {
+    width: 12%;
+    padding-bottom: 20px;
+}
+
+.header__title {
+    font-size: 54px;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.header__text {
+    padding-top: 35px;
+    
+    text-transform: uppercase;
+    font-size: 15px;
+    line-height: 29px;
+}
+
+.header__icon {
+    width: 7%;
+}
+
+.services {
+    background-image: url("img/services.jpg");
+}
+
+.what-we-do {
+    height: 180vh;
+}
+
+.links {
+    height: 60vh;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.links__item:first-child {
+    background-image: url("img/work1.jpg");
+}
+
+.links__item:nth-child(2) {
+    background-image: url("img/work2.jpg");
+}
+
+.links__item:nth-child(3) {
+    background-image: url("img/work3.jpg");
+}
+
+.links__item:nth-child(4) {
+    background-image: url("img/work4.jpg");
+}
+
+.links__item:nth-child(5) {
+    background-image: url("img/work5.jpg");
+}
+
+.links__item:last-child {
+    background-image: url("img/work6.jpg");
+}
+
+.links__item {
+    width: calc(30% - 5px);
+    height: 40%;
+
+    padding: 40px;
+
+    display: flex;
+    align-items: flex-end;
+
+    font-size: 34px;
+    letter-spacing: 5px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}  
+
+.links__item:hover {
+    opacity: 0.7;
+}
+
+.links__item_bigger {
+    width: calc(40% - 5px);
+}
+
+.links__item:nth-child(n+4) {
+    margin-top: 10px;
+}
+
+.contact {
+    height: 50vh;
+}
+
+.footer {
+    height: 20vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer__logo {
+    height: 30%;
+    width: 10%;
+}
+
+.footer__text {
+    font-size: 14px;
+}

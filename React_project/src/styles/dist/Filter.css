@@ -1,0 +1,78 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(23vh - 80px);
+  color: #d9d9d9;
+}
+.filter__params {
+  display: flex;
+  align-items: center;
+}
+.filter__params > * {
+  padding-right: 40px;
+}
+.filter__params_drawer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+.filter__params_drawer .filter__dropdown_sort .MuiFormControl-root {
+  margin-left: 10px;
+}
+.filter__params_drawer .MuiFormControl-root {
+  margin: 0;
+}
+.filter__types {
+  margin-right: -13px;
+}
+.filter__types_drawer {
+  padding-left: 5px;
+}
+.filter__dropdown_sort {
+  display: flex;
+  align-items: center;
+  width: 210px;
+  margin-right: -13px;
+}
+.filter__slider {
+  display: flex;
+}
+.filter__slider > span {
+  padding-right: 20px;
+  padding-top: 2px;
+}
+.filter__slider > div {
+  width: 300px;
+}
+.filter .MuiPaper-root {
+  top: 20px;
+}
+.filter .MuiFormControlLabel-root {
+  margin-left: -9px;
+}
+.filter__control {
+  margin: 20px 0;
+}
+.filter__btn {
+  background-color: #414f57;
+  position: relative;
+  left: 50%;
+  transform: translatex(-50%);
+}
+.filter__btn:active, .filter__btn:hover {
+  background-color: #445b68;
+}
+
+.MuiTooltip-tooltip.MuiTooltip-tooltipPlacementBottom {
+  color: #d9d9d9;
+  margin: 0;
+}
+
+.MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
+  background: #313540;
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+}

@@ -1,0 +1,87 @@
+.slider {
+  width: 75%;
+  max-width: 1200px;
+  margin: auto;
+
+  *:focus {
+    outline: none;
+  }
+
+  &__mask {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__wrapper {
+    .slick {
+      &-list {
+        overflow: visible;
+      }
+    }
+  }
+
+  &__item {
+    height: 60vh;
+    margin: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    background: linear-gradient(
+      90deg,
+      rgba(49, 53, 64, 1) 0%,
+      rgba(60, 59, 65, 1) 80%,
+      rgba(157, 139, 139, 0) 100%
+    );
+    border-radius: 20px;
+
+    &_mask {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(49, 53, 64, 1) 0%,
+        rgba(60, 59, 65, 1) 69%,
+        rgba(157, 139, 139, 0) 95%
+      );
+      border-radius: 20px;
+    }
+
+    &_description {
+      padding: 40px;
+      height: 100%;
+      position: relative;
+      z-index: 1;
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    img {
+      border-radius: 0 20px 20px 0;
+      object-fit: cover;
+      width: 30%;
+    }
+  }
+
+  &__title {
+    font-size: 40px;
+    padding-bottom: 10px;
+    line-height: 40px;
+  }
+
+  &__subtitle {
+    padding-top: 10px;
+  }
+}
+
+.section__slider {
+  height: 77vh;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}

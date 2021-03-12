@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JQuery</title>
+    <link rel="stylesheet" href="style/dist/style.css" />
+  </head>
+  <body>
+    <section class="sect">
+      <div class="sect__mask">
+        <div class="sect__container">
+          <div class="sect__btns">
+            <div class="sect__btn_wrapper active-tab">
+              <button class="sect__btn">information</button>
+            </div>
+
+            <div class="sect__btn_wrapper">
+              <button class="sect__btn">calculator</button>
+            </div>
+
+            <div class="sect__btn_wrapper">
+              <button class="sect__btn">where to buy</button>
+            </div>
+          </div>
+
+          <div class="sect__tabs">
+            <div class="game tab">
+              <div class="game__view">
+                <img src="img/farcry.png" alt="Game" />
+                <img src="img/stars.png" alt="mark" />
+              </div>
+
+              <div class="game__info">
+                <div class="game__main">
+                  <div>
+                    <h3 class="game__name">FarCry 4</h3>
+                    <p class="game__date">First Released Nov 17, 2014</p>
+                  </div>
+
+                  <img src="img/rating.png" alt="rating" />
+                </div>
+
+                <p class="game__description">
+                  In Far Cry 4, players find themselves in Kyrat, a
+                  breathtaking, perilous and wild region of the Hima layas
+                  struggling under the regime of a despotic self-appointed king.
+                </p>
+
+                <div class="game__buy">
+                  <div>
+                    <p class="game__discount">20% OFF!</p>
+                    <p class="game__price">$59.96</p>
+                  </div>
+
+                  <button class="game__btn">BUY IT NOW</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="calc tab">
+              <div class="calc__disp">
+                <p class="prev">
+                  <span class="prev__act"></span>
+                  <span class="prev__res"></span>
+                </p>
+                <p class="inputField target"><span id="0">0</span></p>
+                <p class="res"></p>
+              </div>
+
+              <div class="calc__btns">
+                <button class="btn btn__act">C</button>
+                <button class="btn btn__act">del</button>
+                <button class="btn btn__act">%</button>
+                <button class="btn btn__act">/</button>
+                <button class="btn btn__num">7</button>
+                <button class="btn btn__num">8</button>
+                <button class="btn btn__num">9</button>
+                <button class="btn btn__act">*</button>
+                <button class="btn btn__num">4</button>
+                <button class="btn btn__num">5</button>
+                <button class="btn btn__num">6</button>
+                <button class="btn btn__act">-</button>
+                <button class="btn btn__num">1</button>
+                <button class="btn btn__num">2</button>
+                <button class="btn btn__num">3</button>
+                <button class="btn btn__act">+</button>
+                <button class="btn btn__act">^</button>
+                <button class="btn btn__num">0</button>
+                <button class="btn btn__num">.</button>
+                <button class="btn btn__eq">=</button>
+              </div>
+            </div>
+
+            <div class="tab">
+              third
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

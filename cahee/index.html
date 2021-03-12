@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style/dist/style.css" />
+    <title>Document</title>
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="fav/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="fav/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="fav/favicon-16x16.png"
+    />
+    <link rel="manifest" href="fav/site.webmanifest" />
+    <link rel="mask-icon" href="fav/safari-pinned-tab.svg" color="#5bbad5" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <meta property="og:url" content="http://www.nytimes.com/cahee" />
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="Cahee" />
+    <meta
+      property="og:description"
+      content="Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco."
+    />
+    <meta property="og:image" content="style/dist/img/raspberry.png" />
+    <link
+      rel="shortcut icon"
+      href="style/dist/img/raspberry.png"
+      type="image/x-icon"
+    />
+  </head>
+
+  <body>
+    <!-- header start -->
+    <header class="header sect">
+      <div class="header__wrapper sect__wrapper">
+        <div class="header__nav">
+          <div class="logo">
+            <p class="logo__text">Cahee</p>
+          </div>
+
+          <nav class="nav">
+            <input class="nav__input" type="checkbox" id="nav" />
+            <label class="nav__label" for="nav">
+              <svg class="nav__icon" viewbox="0 0 50 50">
+                <g>
+                  <rect
+                    class="first"
+                    x="0"
+                    y="7.3"
+                    width="50"
+                    height="3.7"
+                    rx="2"
+                    ry="2"
+                  />
+
+                  <rect
+                    class="second"
+                    x="0"
+                    y="23.15"
+                    width="50"
+                    height="3.7"
+                    rx="2"
+                    ry="2"
+                  />
+
+                  <rect
+                    class="third"
+                    x="0"
+                    y="39.7"
+                    width="50"
+                    height="3.7"
+                    rx="2"
+                    ry="2"
+                  />
+                </g>
+              </svg>
+            </label>
+
+            <ul class="nav__list">
+              <li class="nav__item nav__item_active">
+                <a class="nav__link" href="#">HOME</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#about">ABOUT</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#services">SERVICES</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#gallery">GALLERY</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#blog">BLOG</a>
+              </li>
+
+              <li class="nav__item">
+                <a class="nav__link" href="#contact">CONTACT</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="header__content content">
+          <h1 class="header__title content__title">Fresh Life</h1>
+
+          <p class="content__text">
+            Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+          </p>
+
+          <button class="btn header__btn">GET FREE NOW</button>
+        </div>
+
+        <div class="scroll">
+          <a href="#about"
+            ><img
+              class="scroll__img"
+              src="style/dist/img/scroll.png"
+              alt="scroll"
+          /></a>
+        </div>
+      </div>
+    </header>
+    <!-- header end -->
+
+    <!-- about start -->
+    <section class="about sect" id="about">
+      <div class="about__wrapper sect__wrapper">
+        <div class="about__img">
+          <img src="style/dist/img/raspberry.png" alt="raspberry" />
+        </div>
+
+        <div class="about__content content">
+          <h1 class="about__title content__title">About Us</h1>
+
+          <p class="content__text">
+            Abore Cahee magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum.
+          </p>
+
+          <p class="content__text">
+            Nim id est laborum. Sed ut perspiciatis unde omnis iste natus error
+            sit voluptatem accusantium doloremque laudantium, totam rem aperiam,
+            eaque ipsa quae ab illo inventore.
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- about end -->
+
+    <!-- services start -->
+    <section class="services sect" id="services">
+      <div class="services__wrapper sect__wrapper">
+        <div class="services__img image-wr">
+          <img
+            class="image-wr__img image-wr__item"
+            src="style/dist/img/tomato.png"
+            alt="tomato"
+          />
+          <div class="content image-wr__item">
+            <h1 class="image-wr__title content__title">Our Services</h1>
+          </div>
+        </div>
+
+        <div class="services__links">
+          <a class="content__link" href="#">
+            <p>Online Shopping</p>
+
+            <div>
+              <svg>
+                <use xlink:href="sprite.svg#cart"></use>
+              </svg>
+            </div>
+          </a>
+
+          <a class="content__link" href="#">
+            <p>Quality Product</p>
+
+            <div>
+              <svg style="transform: scale(-1, 1);">
+                <use xlink:href="sprite.svg#hand"></use>
+              </svg>
+            </div>
+          </a>
+
+          <a class="content__link" href="#">
+            <p>Domestic & International Delivery</p>
+
+            <div>
+              <svg>
+                <use xlink:href="sprite.svg#earth"></use>
+              </svg>
+            </div>
+          </a>
+
+          <a class="content__link" href="#">
+            <p>Well Organized</p>
+
+            <div>
+              <svg>
+                <use xlink:href="sprite.svg#carrot"></use>
+              </svg>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+    <!-- services end -->
+
+    <!-- gallery start -->
+    <section class="gallery sect" id="gallery">
+      <div class="gallery__wrapper sect__wrapper">
+        <div class="gallery__content content">
+          <h1 class="gallery__title content__title">Gallery</h1>
+
+          <p class="content__text">
+            Consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat.
+          </p>
+        </div>
+
+        <div class="gallery__works">
+          <div class="gallery__photo gallery__photo_bigest">
+            <a href="#"><img src="style/dist/img/gallery1.jpg" alt="pic" /></a>
+          </div>
+
+          <div class="gallery__photo gallery__photo_aside">
+            <a href="#"><img src="style/dist/img/gallery2.jpg" alt="pic" /></a>
+
+            <a href="#"><img src="style/dist/img/gallery3.jpg" alt="pic" /></a>
+          </div>
+
+          <div class="gallery__photo gallery__photo_bottom">
+            <a href="#"><img src="style/dist/img/gallery4.jpg" alt="pic" /></a>
+
+            <a href="#"><img src="style/dist/img/gallery5.jpg" alt="pic" /></a>
+          </div>
+        </div>
+
+        <button class="gallery__btn btn">VIEW MORE</button>
+      </div>
+    </section>
+    <!-- gallery end -->
+
+    <!-- subscribe start -->
+    <section class="subscribe sect">
+      <div class="subscribe__mask">
+        <div class="subscribe__wrapper sect__wrapper">
+          <div class="subscribe__content content">
+            <h1 class="subscribe__title content__title">Subscribe To Us</h1>
+
+            <p class="content__text">
+              Dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+              tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+              minim veniam.
+            </p>
+          </div>
+
+          <form class="subscribe__form">
+            <input type="email" placeholder="Your email address..." />
+
+            <button class="subscribe__btn btn">subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+    <!-- subscribe end -->
+
+    <!-- blog start -->
+    <section class="blog sect" id="blog">
+      <div class="blog__wrapper sect__wrapper">
+        <div class="blog__content content">
+          <h1 class="blog__title content__title">Blog</h1>
+
+          <p class="content__text">
+            Dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate
+            velit.
+          </p>
+        </div>
+
+        <div class="blog__articles articles">
+          <section class="articles__item" id="twenty">
+            <a href="#">
+              <div class="articles__time">
+                <time datetime="2020-11-20"><span>20</span> NOV</time>
+              </div>
+
+              <header class="articles__header">
+                <h3>Green Smoothies: Too Much of a Good Thing?</h3>
+                <p>By Auskteez - 2 hours ago</p>
+              </header>
+            </a>
+          </section>
+
+          <section class="articles__item" id="fourteen">
+            <a href="#">
+              <div class="articles__time">
+                <time datetime="2020-11-14"><span>14</span> NOV</time>
+              </div>
+
+              <header class="articles__header">
+                <h3>Growing Food and a “Thirst” for Innovation</h3>
+                <p>By Auskteez - 3 hours ago</p>
+              </header>
+            </a>
+          </section>
+
+          <section class="articles__item" id="ten">
+            <a href="#">
+              <div class="articles__time">
+                <time datetime="2020-11-10"><span>10</span> NOV</time>
+              </div>
+
+              <header class="articles__header">
+                <h3>Pesticides & Food: What You Need to Know</h3>
+                <p>By Auskteez - 6 hours ago</p>
+              </header>
+            </a>
+          </section>
+        </div>
+
+        <button class="blog__btn btn">VIEW MORE</button>
+      </div>
+    </section>
+    <!-- blog end -->
+
+    <!-- contact start -->
+    <section class="contact sect" id="contact">
+      <div class="contact__wrapper sect__wrapper">
+        <div class="contact__content content">
+          <h1 class="contact__title content__title">Contact</h1>
+
+          <p class="content__text">
+            For new projects, ideas, business or anything you'd like to discuss,
+            contact with me!
+          </p>
+        </div>
+
+        <section class="contact__conection">
+          <form class="contact__form form">
+            <input
+              class="form__input"
+              type="text"
+              name="name"
+              placeholder="Auskteez Tran"
+              minlength="3"
+              required
+            />
+            <input
+              class="form__input"
+              type="email"
+              name="email"
+              placeholder="Your email..."
+              required
+            />
+            <input
+              class="form__input"
+              type="tel"
+              name="tel"
+              placeholder="Your phone number..."
+              minlength=""
+              required
+            />
+            <textarea
+              class="form__input form__input_big-message"
+              name="message"
+              placeholder="Your message..."
+              minlength="50"
+              rows="7"
+              required
+            ></textarea>
+
+            <button class="form__btn btn" type="submit">SEND</button>
+          </form>
+
+          <input class="contact__info-input" type="checkbox" id="address" />
+          <label class="contact__info-label" for="address">
+            <svg>
+              <use xlink:href="sprite.svg#address"></use>
+            </svg>
+          </label>
+
+          <label class="contact__info" for="address">
+            <div class="contact__info-wr">
+              <h4 class="contact__info-title">ADDRESS</h4>
+              <address>123 City name, Street, City, Country</address>
+
+              <h4 class="contact__info-title">EMAIL</h4>
+              <a href="mailto:cahee@domain.com">cahee@domain.com</a>
+
+              <h4 class="contact__info-title">PHONE</h4>
+              <a href="tel:+0123456789">+012 345 6789</a>
+            </div>
+          </label>
+        </section>
+      </div>
+    </section>
+    <!-- contact end -->
+
+    <!-- footer start -->
+    <footer class="footer">
+      <div class="footer__wrapper sect__wrapper">
+        <p>© 2015 Company. All right reserved.</p>
+
+        <div class="footer__logo logo">
+          <p class="footer__logo_smaller logo__text">Cahee</p>
+        </div>
+
+        <p>
+          Made with <span class="footer__text_accent">love</span> by Auskteez
+        </p>
+      </div>
+    </footer>
+    <!-- footer end -->
+  </body>
+</html>

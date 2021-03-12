@@ -1,0 +1,69 @@
+#map {
+  height: 90vh;
+}
+
+.contact {
+  position: relative;
+
+  &__wrapper {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -65%);
+
+    width: 50%;
+    max-width: 1000px;
+    background-color: #fff;
+
+    &_flex {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 1.14em;
+    }
+  }
+
+  &__mask {
+    background-image: url("img/contact.png");
+    padding: 2.05em 1.36em 1.59em 1.36em;
+    background-position: bottom;
+    background-size: auto;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 48%;
+
+    font-size: 1.28rem;
+  }
+
+  &__form {
+    width: 48%;
+  }
+
+  &__item {
+    color: #2c4058;
+    font-style: normal;
+
+    &:first-child::before {
+      content: url("svg/marker.svg");
+    }
+
+    &:nth-child(2)::before {
+      content: url("svg/phone.svg");
+    }
+
+    &:nth-child(3)::before {
+      content: url("svg/mail.svg");
+    }
+
+    &:last-child::before {
+      content: url("svg/watch.svg");
+    }
+
+    &::before {
+      padding-right: 0.71rem;
+    }
+  }
+}

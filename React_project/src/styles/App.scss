@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 500;
+}
+
+.section {
+  overflow: hidden;
+  width: 100%;
+
+  &_first {
+    background-color: #d9d9d9;
+    height: 77vh;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+
+  &_second {
+    background-color: #313540;
+  }
+
+  &__wrapper {
+    width: 91%;
+    max-width: 1500px;
+    margin: auto;
+  }
+}
+
+.button {
+  padding: 10px 80px;
+  background-color: #dd2925;
+  color: #fff;
+  border-radius: 25px;
+  border: none;
+  font-size: 1rem;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:active {
+    background-color: #f8504d;
+  }
+}
+
+.fav__btn {
+  height: calc(23vh - 80px);
+  display: flex;
+  justify-content: center;
+
+  .filmlist__button {
+    padding-bottom: 0;
+  }
+}
+
+.modal {
+  position: fixed;
+  padding: 15px;
+  bottom: 15px;
+  right: 20px;
+  opacity: 0;
+  border-radius: 5px;
+  background-color: #566269;
+  color: #d9d9d9;
+  animation-name: show;
+  animation-duration: 10s;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+  animation-fill-mode: forwards;
+  animation-delay: 10s;
+  z-index: -1;
+}
+
+@keyframes show {
+  0% {
+    opacity: 0;
+    z-index: 1;
+  }
+  20%,
+  80% {
+    opacity: 1;
+    z-index: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.rating {
+  position: relative;
+  top: 3px;
+  margin-right: 10px;
+
+  &__wrapper {
+    margin-top: auto;
+  }
+}
+
+.search {
+  height: 30px;
+  padding: 0 20px;
+  font-size: 16px;
+  color: #ededed;
+  background-color: #414f57;
+  border: none;
+  border-radius: 16px;
+
+  &:focus {
+    background-color: #566269;
+    outline: none;
+  }
+
+  &::placeholder {
+    color: #c7c7c7;
+  }
+
+  &_wrapper {
+    width: 300px;
+  }
+}

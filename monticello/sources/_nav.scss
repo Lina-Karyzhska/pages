@@ -1,0 +1,36 @@
+.nav {
+  width: 65%;
+  font-size: 1rem;
+
+  &__openbtn {
+    display: none;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none;
+  }
+
+  &__item {
+    cursor: pointer;
+    position: relative;
+
+    &:before {
+      content: url("svg/dot.svg");
+
+      position: absolute;
+      top: 50%;
+      left: -1.43rem;
+      transform: translateY(-50%);
+    }
+
+    &:hover,
+    &:first-child {
+      &::before {
+        content: url("svg/dotOn.svg");
+      }
+    }
+  }
+}

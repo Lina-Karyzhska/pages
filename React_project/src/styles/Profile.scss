@@ -1,0 +1,120 @@
+.profile {
+  &__title {
+    padding-bottom: 1rem;
+    font-size: 1.8rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &_input {
+      display: none;
+    }
+
+    &_btn {
+      background-color: #414f57;
+      margin-top: 30px;
+
+      &:active,
+      &:hover {
+        background-color: #445b68;
+      }
+    }
+
+    &_canvas {
+      width: 200px;
+      height: 300px;
+      background-color: #414f57;
+    }
+  }
+
+  &__information {
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+
+    &_nickname {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      line-height: 1.2rem;
+    }
+
+    &_input {
+      background-color: rgb(144, 163, 173, 0.5);
+      padding: 5px;
+      border: none;
+      border-bottom: 1px solid #414f57;
+      font-size: 1rem;
+      border-radius: 5px 5px 0 0;
+
+      &:focus {
+        outline: none;
+      }
+
+      &_title {
+        font-weight: 500;
+      }
+
+      &_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 33.33%;
+        padding: 10px 35px;
+      }
+    }
+
+    &_wrapper {
+      margin: 0 -35px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    &_textarea {
+      resize: none;
+      background-color: rgb(144, 163, 173, 0.5);
+      border: 1px solid #414f57;
+      margin-top: 5px;
+      padding: 5px;
+      font-size: 1rem;
+      height: 85px;
+
+      &:focus {
+        outline: none;
+      }
+
+      &_wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 10px 0;
+      }
+    }
+
+    &_btn {
+      background-color: #414f57;
+      padding: 10px;
+      width: 210px;
+
+      &_wrapper {
+        align-self: flex-end;
+        margin-top: auto;
+      }
+
+      &:active,
+      &:hover {
+        background-color: #445b68;
+      }
+    }
+  }
+}
+
+.disabled {
+  background-color: transparent;
+  border-radius: 0;
+}

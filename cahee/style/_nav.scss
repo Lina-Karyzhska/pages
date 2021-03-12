@@ -1,0 +1,37 @@
+.nav {
+  width: 55%;
+
+  &__label,
+  &__input {
+    display: none;
+  }
+
+  &__list {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+
+    list-style-type: none;
+
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 1.5;
+  }
+
+  &__item {
+    padding: 6px 0;
+    transition: none;
+
+    &:hover,
+    &_active {
+      padding: 3px 0;
+      border-top: 3px solid #ff6033;
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: #262626;
+  }
+}

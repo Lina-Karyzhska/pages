@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        width: 100%;
+        height: 100%;
+      }
+      ul {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+      }
+      li {
+        width: 20%;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1%;
+      }
+      h4 {
+        word-wrap: break-word;
+      }
+      img {
+        width: 100%;
+      }
+      .btns {
+        margin-top: auto;
+      }
+      button {
+        cursor: pointer;
+      }
+      .isFav {
+        background-color: darkcyan;
+      }
+      .pagination {
+        width: 20%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+      }
+      .pagination button {
+        width: 9.5%;
+      }
+    </style>
+  </head>
+  <body>
+    <form id="searchForm">
+      <input type="text" id="filmName" name="film" />
+      <label for="filmName">Search</label>
+
+      <select name="type" id="filmType">
+        <option value="movie" checked>movie</option>
+        <option value="series">series</option>
+        <option value="episode">episode</option>
+      </select>
+    </form>
+
+    <ul class="filmList"></ul>
+
+    <script src="main.js"></script>
+  </body>
+</html>

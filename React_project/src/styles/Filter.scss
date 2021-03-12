@@ -1,0 +1,97 @@
+.filter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: calc(23vh - 80px);
+  color: #d9d9d9;
+
+  &__params {
+    display: flex;
+    align-items: center;
+
+    & > * {
+      padding-right: 40px;
+    }
+
+    &_drawer {
+      display: flex;
+      flex-direction: column;
+      padding: 40px;
+
+      .filter__dropdown_sort {
+        .MuiFormControl-root {
+          margin-left: 10px;
+        }
+      }
+
+      .MuiFormControl-root {
+        margin: 0;
+      }
+    }
+  }
+
+  &__types {
+    margin-right: -13px;
+
+    &_drawer {
+      padding-left: 5px;
+    }
+  }
+
+  &__dropdown {
+    &_sort {
+      display: flex;
+      align-items: center;
+      width: 210px;
+      margin-right: -13px;
+    }
+  }
+
+  &__slider {
+    display: flex;
+    & > span {
+      padding-right: 20px;
+      padding-top: 2px;
+    }
+    & > div {
+      width: 300px;
+    }
+  }
+
+  .MuiPaper-root {
+    top: 20px;
+  }
+
+  .MuiFormControlLabel-root {
+    margin-left: -9px;
+  }
+
+  &__control {
+    margin: 20px 0;
+  }
+
+  &__btn {
+    background-color: #414f57;
+    position: relative;
+    left: 50%;
+    transform: translatex(-50%);
+
+    &:active,
+    &:hover {
+      background-color: #445b68;
+    }
+  }
+}
+
+.MuiTooltip-tooltip.MuiTooltip-tooltipPlacementBottom {
+  color: #d9d9d9;
+  margin: 0;
+}
+
+.MuiDrawer-paper.MuiDrawer-paperAnchorLeft {
+  background: #313540;
+  color: #d9d9d9;
+  display: flex;
+  justify-content: center;
+}

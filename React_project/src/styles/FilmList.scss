@@ -1,0 +1,28 @@
+.filmlist {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  column-gap: 2rem;
+  row-gap: 2rem;
+  align-items: stretch;
+  padding-bottom: 50px;
+
+  &__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+
+  &__notFound {
+    grid-column-start: 1;
+    grid-column-end: 6;
+    text-align: center;
+    color: #b6b6b6;
+  }
+
+  .MuiPaper-root {
+    margin: 0;
+    margin-left: 0;
+  }
+}

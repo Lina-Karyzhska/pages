@@ -1,0 +1,151 @@
+@media (max-width: 1024px) {
+  .header {
+    position: relative;
+
+    &__searchBar {
+      width: 85%;
+    }
+
+    &__scroll {
+      font-size: 1.5rem;
+
+      svg {
+        width: 1.8rem;
+        bottom: -0.9rem;
+      }
+
+      &:hover,
+      &:active,
+      &:focus {
+        svg {
+          width: 2rem;
+
+          bottom: -30px;
+        }
+      }
+    }
+  }
+
+  .nav {
+    &__label {
+      display: unset;
+      float: right;
+
+      svg {
+        width: 48px;
+        fill: $white-c;
+        * {
+          transition: 0.3s;
+        }
+      }
+    }
+
+    &__list {
+      height: 91%;
+      width: 100vw;
+
+      position: absolute;
+      top: 0;
+      left: 100%;
+      transition: 0.4s;
+
+      flex-direction: column;
+      justify-content: center;
+
+      background-color: $blue-c;
+      opacity: 0;
+    }
+
+    &__item {
+      padding: 2rem;
+      font-size: 1.5rem;
+
+      a::after {
+        bottom: 10px;
+      }
+    }
+
+    &__input:checked {
+      + .nav__label svg {
+        .first {
+          transform: translate(13.8px, 0.8px) rotate(45deg);
+        }
+
+        .second {
+          fill: transparent;
+        }
+
+        .third {
+          transform: translate(-22.2px, 13.2px) rotate(-45deg);
+        }
+      }
+
+      ~ .nav__list {
+        left: 0;
+        opacity: 1;
+      }
+    }
+  }
+
+  .whyChooseUs {
+    &__wrapper {
+      flex-direction: column;
+      padding: 6.5rem 0;
+    }
+
+    &__content {
+      width: 100%;
+    }
+
+    &__pics {
+      width: 100%;
+      padding-top: 1.5rem;
+
+      display: flex;
+      flex-direction: row;
+
+      img:nth-child(n) {
+        padding: 0;
+        width: 49%;
+      }
+    }
+  }
+
+  .howItWorks {
+    font-size: 20px;
+
+    &__lines {
+      width: 73%;
+    }
+
+    &__step {
+      svg {
+        width: 50px;
+      }
+    }
+  }
+
+  .country {
+    padding: 3em 0 2.5em 0;
+
+    &__content {
+      width: 70%;
+    }
+  }
+
+  .tourist {
+    padding: 2em 0 3em 0;
+
+    &__content {
+      width: 80%;
+    }
+
+    &__title {
+      margin-bottom: 1.5em;
+    }
+  }
+
+  .footer {
+    padding: 2.5em 0 1em 0;
+  }
+}

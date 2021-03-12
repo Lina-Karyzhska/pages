@@ -1,0 +1,120 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;700;800&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Raleway", sans-serif;
+  transition: all 0.2s ease-in;
+}
+
+html {
+  font-size: 17px;
+}
+
+.sect {
+  @include bg-img;
+
+  &__wrapper {
+    width: 80%;
+    max-width: 1300px;
+    height: 100%;
+
+    margin: 0 auto;
+
+    display: flex;
+  }
+}
+
+.logo {
+  &__text {
+    font-family: "Pacifico", cursive;
+    font-size: 4rem;
+  }
+}
+
+.scroll {
+  height: 15vh;
+  text-align: center;
+
+  &__img:hover {
+    width: 27px;
+  }
+}
+
+.btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+
+  padding: 0 3%;
+
+  text-align: center;
+  font-size: 1.2rem;
+  line-height: 2.6;
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.content {
+  font-size: 90px;
+
+  &__title {
+    font-weight: 700;
+    line-height: 0.8;
+    margin-bottom: 4%;
+  }
+
+  &__text {
+    width: 100%;
+
+    margin-top: 2%;
+
+    font-size: 1rem;
+    line-height: 1.6;
+  }
+
+  &__link {
+    width: 55%;
+    height: 22%;
+
+    display: flex;
+    align-items: center;
+
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #262626;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+      background-color: #fff;
+    }
+
+    p {
+      width: 75%;
+      padding: 0 5px;
+    }
+
+    use,
+    svg {
+      width: 45%;
+      height: 100%;
+    }
+
+    div {
+      text-align: center;
+      width: 25%;
+      height: 100%;
+      border-left: 1px solid black;
+    }
+  }
+}

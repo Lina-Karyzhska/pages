@@ -1,0 +1,45 @@
+.footer {
+  background: linear-gradient(
+    45deg,
+    rgba(85, 183, 255, 1) 0%,
+    rgba(126, 90, 255, 1) 100%
+  );
+  color: #fff;
+  font-size: 50px;
+
+  &__mask {
+    background-image: url("img/footer.png");
+    padding: 4em 0;
+  }
+
+  &__wrapper {
+    width: 50%;
+  }
+
+  &__media {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 0.7em;
+  }
+
+  &__text {
+    margin: 0 -20px;
+    font-size: 1rem;
+    svg {
+      height: 1rem;
+    }
+
+    span {
+      padding: 2px 20px;
+
+      margin: 2px 0;
+
+      &:first-child {
+        border-right: 1px solid #fff;
+        padding-right: 16px;
+      }
+    }
+  }
+}

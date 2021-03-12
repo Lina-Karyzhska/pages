@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: $white-c;
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+html {
+  font-size: 16px;
+}
+
+.sect {
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+
+  &__wrapper {
+    width: 1110px;
+    max-width: 1110px;
+
+    margin: auto;
+
+    display: flex;
+  }
+}
+
+.logo {
+  font-size: 1.52rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+
+  position: relative;
+  left: -2px;
+}
+
+.aleo-f {
+  font-family: "Aleo", serif;
+}

@@ -1,0 +1,21 @@
+.services {
+  height: 100vh;
+
+  background-color: #70bfff;
+
+  &__wrapper {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__links {
+    width: 55%;
+    height: 50%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+}

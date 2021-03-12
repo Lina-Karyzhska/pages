@@ -1,0 +1,74 @@
+.btn {
+  background-color: $blue-c;
+  color: $white-c;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  border: none;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.2s;
+
+  font-size: 1rem;
+  line-height: 1.63;
+
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  &__rec {
+    width: calc(100% + 8rem);
+    height: 4rem;
+
+    transition: 0.4s;
+
+    position: absolute;
+    top: 0;
+    left: calc(-50% - 8rem);
+
+    display: flex;
+
+    span {
+      &:nth-child(1) {
+        width: 0;
+        height: 0;
+        border-top: 4rem solid $d_blue-c;
+        border-left: 4rem solid transparent;
+      }
+
+      &:nth-child(2) {
+        background-color: $d_blue-c;
+        width: calc(100% - 8rem);
+        height: 100%;
+      }
+
+      &:nth-child(3) {
+        width: 0;
+        height: 0;
+        border-bottom: 4rem solid $d_blue-c;
+        border-right: 4rem solid transparent;
+      }
+    }
+  }
+
+  &__text {
+    width: 100%;
+
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+
+    .btn__rec {
+      left: 50%;
+    }
+  }
+}

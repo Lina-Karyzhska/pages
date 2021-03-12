@@ -1,0 +1,196 @@
+@font-face {
+    font-family: 'Acrom Extra Bold';
+    src: url('fonts/Acrom-ExtraBold.eot');
+    src: url('fonts/Acrom-ExtraBold.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Acrom-ExtraBold.woff') format('woff'),
+    url('fonts/Acrom-ExtraBold.ttf') format('truetype');
+    font-weight: bolder;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Acrom Light';
+    src: url('fonts/Acrom-Light.eot');
+    src: url('fonts/Acrom-Light.eot?#iefix') format('embedded-opentype'),
+    url('fonts/Acrom-Light.woff') format('woff'),
+    url('fonts/Acrom-Light.ttf') format('truetype');
+    font-weight: light;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.background {
+    height: 100vh;
+    background-image: url("img/bg.png");  
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.mask {
+    height: 100vh;
+    position: relative;
+    background-image: url("img/mask.png"); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.7;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.wrapper * {
+    color: #ecf0e8;
+}
+
+.logo {
+    float: left;
+    margin: 20px 0 0 30px ;
+}
+
+.nav {
+    width: 750px;
+    float: right;
+    margin: 20px 0;
+    font-size: 17px;
+    line-height: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav li {
+    display: inline-block;
+    margin: 1px 20px;
+}
+
+.nav li a {
+    text-decoration: none;
+}
+
+.nav li:nth-child(7) {
+    padding: 6px;
+    margin: 14px;
+    border: 1px solid #bed62f;
+    line-height: 17px;
+}
+
+.nav li:nth-child(8) i{
+    color:  #bed62f;
+    cursor: pointer;
+}
+
+.nav li:hover:not(:nth-child(n+7))::before {
+    content: "";
+    display: block;
+    border-top: 1px solid #bed62f;
+    margin-top: 0;
+}
+
+.clear {
+    clear: both;
+}
+
+.content {
+    width: 50%;
+    margin: 115px auto 0 auto;
+    padding: 0 60px;
+    border-left: 6px solid #bed62f;
+}
+
+.content * {
+    cursor: default;
+}
+
+.content p {
+    font-size: 23px;
+    line-height: 35px;
+}
+
+.content .color {
+    color: #bed62f;
+}
+
+.content .size {
+    font-size: 14px;
+}
+
+.content p .arrows:hover {
+    color: #bed62f;
+    font-family: 'Acrom Light';
+    cursor: pointer;
+}
+
+.content h1 {
+    padding: 35px 0px 20px 0px;
+    font-size: 65px;
+    line-height: 70px;
+    text-transform: uppercase;
+    font-family: 'Acrom Extra Bold';
+}
+
+.squares {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    z-index: 1;
+}
+
+.squares:first-child {
+    background-color: #fff;
+    top: 215px;
+    left: 290px;
+}
+
+.squares:nth-child(2) {
+    background-color: #bed62f;
+    left: 230px;
+    bottom: 120px;
+}
+
+.squares:nth-child(3) {
+    background-color: #bed62f;
+    left: 250px;
+    bottom: 95px;
+}
+
+.squares:nth-child(4) {
+    background-color: #bed62f;
+    top: 170px;
+    right: 230px;
+}
+
+.squares:nth-child(5) {
+    background-color: #bed62f;
+    right: 230px;
+    bottom: 155px;
+}
+
+.squares:nth-child(6) {
+    background-color: #bed62f;
+    right: 260px;
+    bottom: 125px;
+}
+
+.squares:nth-child(7) {
+    background: #fff;
+    right: 265px;
+    bottom: 95px;
+}
+
+.mouse {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}

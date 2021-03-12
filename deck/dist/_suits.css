@@ -1,0 +1,206 @@
+.card__suit {
+  height: 30px;
+}
+.card__suit_heart {
+  position: relative;
+  width: 35px;
+}
+.card__suit_heart:before, .card__suit_heart:after {
+  position: absolute;
+  content: "";
+  left: 17px;
+  top: 0;
+  width: 17px;
+  height: 29px;
+  background: red;
+  border-radius: 17px 17px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.card__suit_heart:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.card__suit_heart:nth-child(4) {
+  transform: rotate(180deg);
+}
+.card__suit_diamond {
+  width: 0;
+  height: 0;
+  border: 11px solid transparent;
+  border-bottom: 15px solid red;
+  position: relative;
+  top: -11px;
+}
+.card__suit_diamond:nth-child(2) {
+  justify-self: end;
+}
+.card__suit_diamond:after {
+  content: "";
+  position: absolute;
+  left: -11px;
+  top: 15px;
+  width: 0;
+  height: 0;
+  border: 11px solid transparent;
+  border-top: 15px solid red;
+}
+.card__suit_clubs {
+  width: 35px;
+  height: 30px;
+  position: relative;
+}
+.card__suit_clubs:nth-child(4) {
+  transform: rotate(180deg);
+}
+.card__suit_clubs div {
+  position: absolute;
+  background-color: black;
+}
+.card__suit_clubs_circles {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+}
+.card__suit_clubs_circles:nth-child(1), .card__suit_clubs_circles:nth-child(3) {
+  top: 10px;
+}
+.card__suit_clubs_circles:nth-child(2) {
+  left: 10px;
+}
+.card__suit_clubs_circles:nth-child(3) {
+  right: 0;
+}
+.card__suit_clubs_leg {
+  width: 5px;
+  height: 15px;
+  bottom: 0;
+  left: 15px;
+  position: relative;
+  background-color: black;
+}
+.card__suit_clubs_leg::before, .card__suit_clubs_leg::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 0;
+  border-bottom: 5px solid black;
+  position: absolute;
+  bottom: 0;
+}
+.card__suit_clubs_leg::before {
+  left: -80%;
+  border-left: 4px solid transparent;
+}
+.card__suit_clubs_leg::after {
+  border-right: 4px solid transparent;
+  right: -80%;
+}
+.card__suit_spades .card__suit_clubs_leg {
+  left: 15.7px;
+  bottom: 10px;
+}
+.card__suit_spades_h {
+  position: relative;
+  width: 35px;
+  transform: rotate(180deg);
+}
+.card__suit_spades_h:before, .card__suit_spades_h:after {
+  position: absolute;
+  content: "";
+  left: 17px;
+  top: 0;
+  width: 17px;
+  height: 29px;
+  background: black;
+  border-radius: 17px 17px 0 0;
+  transform: rotate(-45deg);
+  transform-origin: 0 100%;
+}
+.card__suit_spades_h:after {
+  left: 0;
+  transform: rotate(45deg);
+  transform-origin: 100% 100%;
+}
+.card__suit_spades:nth-child(4) {
+  transform: rotate(180deg);
+}
+.card__suit_big {
+  grid-column: 1/4;
+  align-self: center;
+  justify-self: center;
+}
+.card__suit_big_h {
+  width: 70px;
+  height: 60px;
+}
+.card__suit_big_h:before, .card__suit_big_h:after {
+  left: 35px;
+  width: 35px;
+  height: 60px;
+  border-radius: 35px 35px 0 0;
+}
+.card__suit_big_h:after {
+  left: 0;
+}
+.card__suit_big_d {
+  border: 21px solid transparent;
+  border-bottom: 30px solid red;
+  top: -21px;
+  width: 0;
+  height: 0;
+}
+.card__suit_big_d:after {
+  left: -21px;
+  top: 30px;
+  border: 21px solid transparent;
+  border-top: 30px solid red;
+}
+.card__suit_big_c {
+  width: 70px;
+  height: 60px;
+}
+.card__suit_big_c .card__suit_clubs_circles {
+  width: 32px;
+  height: 32px;
+}
+.card__suit_big_c .card__suit_clubs_circles:nth-child(1), .card__suit_big_c .card__suit_clubs_circles:nth-child(3) {
+  top: 20px;
+}
+.card__suit_big_c .card__suit_clubs_circles:nth-child(2) {
+  left: 19px;
+}
+.card__suit_big .card__suit_clubs_leg {
+  width: 10px;
+  height: 30px;
+  left: 30px;
+}
+.card__suit_big .card__suit_clubs_leg::before, .card__suit_big .card__suit_clubs_leg::after {
+  border-bottom: 10px solid black;
+  bottom: 0;
+}
+.card__suit_big .card__suit_clubs_leg::before {
+  border-left: 8px solid transparent;
+}
+.card__suit_big .card__suit_clubs_leg::after {
+  border-right: 8px solid transparent;
+}
+.card__suit_big_s .card__suit_spades_h {
+  width: 70px;
+  height: 60px;
+  top: -20px;
+}
+.card__suit_big_s .card__suit_spades_h:before, .card__suit_big_s .card__suit_spades_h:after {
+  left: 35px;
+  width: 35px;
+  height: 60px;
+  border-radius: 35px 35px 0 0;
+}
+.card__suit_big_s .card__suit_spades_h:after {
+  left: 0;
+}
+.card__suit_big_s .card__suit_clubs_leg {
+  bottom: 40px;
+  left: 29.7px;
+}

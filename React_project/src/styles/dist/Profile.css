@@ -1,0 +1,98 @@
+.profile__title {
+  padding-bottom: 1rem;
+  font-size: 1.8rem;
+}
+.profile__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.profile__avatar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile__avatar_input {
+  display: none;
+}
+.profile__avatar_btn {
+  background-color: #414f57;
+  margin-top: 30px;
+}
+.profile__avatar_btn:active, .profile__avatar_btn:hover {
+  background-color: #445b68;
+}
+.profile__avatar_canvas {
+  width: 200px;
+  height: 300px;
+  background-color: #414f57;
+}
+.profile__information {
+  width: 75%;
+  display: flex;
+  flex-direction: column;
+}
+.profile__information_nickname {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 1.2rem;
+}
+.profile__information_input {
+  background-color: rgba(144, 163, 173, 0.5);
+  padding: 5px;
+  border: none;
+  border-bottom: 1px solid #414f57;
+  font-size: 1rem;
+  border-radius: 5px 5px 0 0;
+}
+.profile__information_input:focus {
+  outline: none;
+}
+.profile__information_input_title {
+  font-weight: 500;
+}
+.profile__information_input_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 33.33%;
+  padding: 10px 35px;
+}
+.profile__information_wrapper {
+  margin: 0 -35px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.profile__information_textarea {
+  resize: none;
+  background-color: rgba(144, 163, 173, 0.5);
+  border: 1px solid #414f57;
+  margin-top: 5px;
+  padding: 5px;
+  font-size: 1rem;
+  height: 85px;
+}
+.profile__information_textarea:focus {
+  outline: none;
+}
+.profile__information_textarea_wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 10px 0;
+}
+.profile__information_btn {
+  background-color: #414f57;
+  padding: 10px;
+  width: 210px;
+}
+.profile__information_btn_wrapper {
+  align-self: flex-end;
+  margin-top: auto;
+}
+.profile__information_btn:active, .profile__information_btn:hover {
+  background-color: #445b68;
+}
+
+.disabled {
+  background-color: transparent;
+  border-radius: 0;
+}

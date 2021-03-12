@@ -1,0 +1,31 @@
+@media (max-width: 425px) {
+  .sect {
+    &__wrapper {
+      width: 90%;
+    }
+  }
+
+  .header {
+    &__content {
+      font-size: 36px;
+    }
+
+    &__text {
+      font-size: 1rem;
+    }
+  }
+
+  .whyChooseUs {
+    &__wrapper {
+      padding: 2rem 0;
+    }
+  }
+
+  .country {
+    padding: 2rem 0 1.5rem 0;
+  }
+
+  .tourist {
+    padding: 1.5rem 0 2rem 0;
+  }
+}

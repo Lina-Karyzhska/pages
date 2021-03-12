@@ -1,0 +1,24 @@
+.footer {
+  background-color: #262626;
+  color: #b9b9b9;
+  height: 10vh;
+
+  display: flex;
+  align-items: center;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    font-size: 1rem;
+  }
+
+  &__logo_smaller {
+    font-size: 1.5rem;
+  }
+
+  &__text_accent {
+    color: #ff2b58;
+  }
+}

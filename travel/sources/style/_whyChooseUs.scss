@@ -1,0 +1,56 @@
+.whyChooseUs {
+  background-image: url("../../img/bg-why.webp");
+
+  &__wrapper {
+    justify-content: space-between;
+    padding: 7.5rem 0;
+  }
+
+  &__content {
+    width: 48.7%;
+
+    font-size: 36px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+
+  &__title {
+    color: $white-c;
+    font-size: 1em;
+    margin-bottom: 1.1em;
+  }
+
+  &__text {
+    width: 100%;
+
+    color: $milk-c;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    line-height: 1.63;
+
+    margin: 0.81rem 0;
+  }
+
+  &__btn {
+    margin: 1.9em 0 0.75em 0;
+    padding: 1.9rem 7rem;
+  }
+
+  &__pics {
+    width: 42.8%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    img:nth-child(2) {
+      align-self: flex-end;
+
+      padding-top: 5px;
+    }
+  }
+}
